@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Dasar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <ul class="topnav">
+        <li><a href="index.php">Tampilkan Data</a></li>
+        <li><a href="biodata.html" class="active">Biodata</a></li>
+        <li class="right"><a href="#about">About</a></li>
+    </ul>
+    <form action="php/kirim.php" method="post">
+        <br>
+        <h1>Isi Biodata</h1>
+        <table class="center">
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="fname"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td><input type="radio" name="jk" value="Laki-Laki">Laki-Laki <input type="radio" value="Perempuan"
+                        name="jk">Perempuan </td>
+            </tr>
+
+            <tr>
+                <td>Hoby</td>
+                <td>:</td>
+                <td><input type="checkbox" name="hoby[]" value="Masak">Masak <br>
+                    <input type="checkbox" value="Sepak Bola" name="hoby[]">Sepak Bola <br>
+                    <input type="checkbox" name="hoby[]" value="Bermain Game">Bermain Game <br>
+                    <input type="checkbox" name="hoby[]" value="Badminton">Badminton <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><textarea name="falamat" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" value="Kirim" name="submit"></td>
+            </tr>
+        </table>
+    </form>
+   
+</body>
+
+</html>

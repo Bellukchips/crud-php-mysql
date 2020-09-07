@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+}
+ul.topnav{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: coral;
+}
+ul.topnav li{
+    float: left;
+}
+
+ul.topnav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.topnav li a:hover:not(.active){
+    background-color: coral;
+}
+ul.topnav li a.active{
+    background-color: rgb(238, 215, 182);
+    color: black;
+}
+ul.topnav li.right{
+    float: right;
+}
+@media screen and (max-width:600px){
+    ul.topnav li.right,ul.topnav li {
+        float: none;
+    }
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+input[type=submit]{
+    background-color: coral;
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    padding: 20px 35px;
+    transition: ease-in-out;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+video{
+    width: 100%;
+
+}
+h1{
+    text-align: center;
+}
