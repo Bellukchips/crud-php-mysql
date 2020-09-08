@@ -13,7 +13,7 @@
 }
 table{
     border-collapse: collapse;
-    width: 100%;
+    width: 60%;
 }
 th,td{
     padding: 15px;
@@ -37,6 +37,7 @@ th,td{
                 <th>Jenis Kelamin</th>
                 <th>Hobby</th>
                 <th>Alamat</th>
+                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -59,6 +60,7 @@ th,td{
                     <td>'.$data['jk'].'</td>
                     <td>'.$data['hoby'].'</td>
                     <td>'.$data['alamat'].'</td>
+                    <td><a href="php/edit.php?id='.$data['id'].'">Edit</a> | <a href="php/hapus.php?id='.$data['id'].'">Hapus</a></td>
                     </tr>
                     ';
                     $no++; //increment

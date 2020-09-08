@@ -14,7 +14,13 @@ if(isset($_POST['submit'])){
 
     $simpan = mysqli_query($conn,"INSERT INTO biodata VALUES(null,'$name','$jk','$data_hoby','$alamat')");
 
-    echo "Data Berhasil Di input . <a href='../biodata.html'>Kembali</a>";
+    if($simpan){
+        echo "<script>alert('Berhasil Di simpan')</script>";
+        echo "<meta http-equiv='refresh' content='1 url=../index.php'>";
+    }else{
+        echo "<script>alert('Berhasil Di simpan')</script>";
+        echo "<meta http-equiv='refresh' content='1 url=../index.php'>";
+    }
     
 }
 
